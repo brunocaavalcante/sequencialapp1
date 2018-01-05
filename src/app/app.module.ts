@@ -9,24 +9,28 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { CarteirinhaPage } from '../pages/carteirinha/carteirinha';
+import { TestPage } from '../pages/test/test';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    CarteirinhaPage
+    CarteirinhaPage,
+    TestPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
-    CarteirinhaPage
+    IonicModule.forRoot(MyApp)
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    CarteirinhaPage,
+    TestPage
   ],
   providers: [
     StatusBar,

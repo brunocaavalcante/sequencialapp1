@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
-/**
- * Generated class for the CarteirinhaPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -15,7 +10,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CarteirinhaPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public alertCtrl: AlertController
+  ) {
+  }
+  showAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Pedido de Carteirinha!',
+      subTitle: 'Pedido realizado com sucesso!',
+      buttons: ['OK']
+    });
+    alert.present();
   }
 
   ionViewDidLoad() {

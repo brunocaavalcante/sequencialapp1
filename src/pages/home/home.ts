@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CarteirinhaPage } from '../carteirinha/carteirinha';
+import { TestPage } from '../test/test';
 
 @Component({
   selector: 'page-home',
@@ -11,8 +12,11 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
-  Gotocracha(){
+  goToCarteirinhaPage(){
     this.navCtrl.push(CarteirinhaPage);
+  }
+  goToTestPage(){
+    this.navCtrl.push(TestPage);
   }
 
 }

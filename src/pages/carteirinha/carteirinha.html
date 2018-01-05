@@ -14,5 +14,17 @@
 
 
 <ion-content padding>
+    <ion-list>
+        <ion-item>
+          <ion-label>Sexo</ion-label>
+          <ion-select [(ngModel)]="gaming">
+            <ion-option value="Fem">Feminino</ion-option>
+            <ion-option value="Masc">Masculino</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      
+        <button ion-button full (click)="showAlert()">Solicitar Carteirinha</button>
+      
 
 </ion-content>

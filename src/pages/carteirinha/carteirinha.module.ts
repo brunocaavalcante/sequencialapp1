@@ -10,4 +10,5 @@ import { CarteirinhaPage } from './carteirinha';
     IonicPageModule.forChild(CarteirinhaPage),
   ],
 })
-export class CarteirinhaPageModule {}
+export class CarteirinhaPageModule {
+}
